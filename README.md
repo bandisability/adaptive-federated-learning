@@ -1,3 +1,31 @@
+## Enhancements and Optimizations
+
+### Features Added
+1. **Resource Optimization**:
+   - Adaptive batch size adjustments based on dynamic resource constraints.
+   - Enhanced gradient computation logic to prevent NaN values during weight updates.
+
+2. **Adaptability Improvements**:
+   - Implemented dynamic client sampling based on resource constraints and training dynamics.
+   - Supports flexible scaling for batch sizes to improve training efficiency.
+
+3. **Visualization Features**:
+   - **Enhanced TensorBoard Integration**:
+     - Real-time tracking of training loss, accuracy, and iteration time.
+     - Logs detailed metrics for both training and testing phases.
+     - Easy execution via:
+       ```bash
+       tensorboard --logdir=./logs
+       ```
+   - **Detailed Client Logs**:
+     - Logs individual client statistics for better training analysis and debugging.
+
+### Usage Instructions
+To run the updated training script with the added features, use:
+```bash
+python main.py --dataset mnist --model_name TwoNN --batch_size 32 --lr 0.01
+
+
 ### Adaptive Federated Learning in Resource Constrained Edge Computing Systems
 
 This repository includes source code for the paper S. Wang, T. Tuor, T. Salonidis, K. K. Leung, C. Makaya, T. He, and K. Chan, "Adaptive federated learning in resource constrained edge computing systems," IEEE Journal on Selected Areas in Communications, vol. 37, no. 6, pp. 1205 – 1221, Jun. 2019.
